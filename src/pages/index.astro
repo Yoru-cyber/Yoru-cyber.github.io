@@ -6,6 +6,8 @@ import { Content as URLShortenerContent } from "./Projects/url-shortener.md";
 import * as URLShortener from "./Projects/url-shortener.md";
 import { Content as CurrencyAPIContent } from "./Projects/CurrencyAPI.md";
 import * as CurrencyAPI from "./Projects/CurrencyAPI.md";
+import {Content as GeminiCliContent} from "./Projects/Gemini-cli.md"
+import * as GeminiCli from "./Projects/Gemini-cli.md"
 ---
 
 <Layout title="Yoru-cyber">
@@ -16,6 +18,7 @@ import * as CurrencyAPI from "./Projects/CurrencyAPI.md";
         location={md.frontmatter.location + " 🇻🇪"}
         position={md.frontmatter.position + " 🧑‍🎓"}
         description={md.frontmatter.description}
+        availableForWork={true}
       />
     </section>
     <section id="Projects" class="mt-20" >
@@ -38,11 +41,19 @@ import * as CurrencyAPI from "./Projects/CurrencyAPI.md";
             >
             <CurrencyAPIContent />
           </li>
+          <li class="m-5">
+            <a
+              href="https://github.com/Yoru-cyber/Gemini-cli"
+              class="text-2xl font-medium">{GeminiCli.frontmatter.title}</a
+            >
+            <GeminiCliContent />
+          </li>
         </ul>
       </article>
     </section>
     <section id="About" class="mt-20">
-      <article class="flex justify-center items-center max-w-xl">
+      <article class="flex flex-col justify-center items-center max-w-xl">
+        <h1 class="text-4xl font-bold text-center">About Me</h1>
        <p>
         I'm a 20-year-old a full stack developer web developer from Venezuela. I
         have experience building full stack projects. My skillset concludes in a
@@ -54,11 +65,10 @@ import * as CurrencyAPI from "./Projects/CurrencyAPI.md";
        </p>
       </article>
     </section>
-    <section id="contact" class="mt-20">
-      <article class="flex justify-center items-center max-w-xl">
-        <p>
-        This is contact
-        </p>
+    <section id="Contact" class="mt-20">
+      <article class="flex flex-col justify-center items-center max-w-xl">
+        <h1 class="text-4xl font-bold text-center">Contact Me</h1>
+        <button>Email</button>
        </article>
     </section>
   </main>

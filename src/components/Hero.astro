@@ -4,13 +4,15 @@ interface Props {
   location: string;
   position: string;
   description: string;
+  availableForWork?: boolean;
 }
-const { name, location, position, description} = Astro.props;
+const { name, location, position, description, availableForWork} = Astro.props;
 ---
 
 <article class="flex flex-col items-center justify-center max-w-xl">
 <h1 class="text-4xl font-bold">Hi, i'm {name}</h1>
 <h2 class="text-xl font-medium mt-2">{position}</h2>
+{availableForWork ? <p class="mt-2 bg-slate-900 w-48 rounded-lg text-green-500 text-center"><a href="https://www.upwork.com/freelancers/~01139b0bc126f1cd16?viewMode=1">Available for Work</a></p> :<p class="mt-2 bg-slate-900 rounded-lg w-48 text-center text-red-500">Unvailable for Work</p> }
 <p class="mt-2">Location: {location}</p>
 <p class="mt-5">{description}</p>
 </article>
