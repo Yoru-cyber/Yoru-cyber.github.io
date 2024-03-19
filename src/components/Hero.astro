@@ -5,10 +5,12 @@ interface Props {
   position: string;
   description: string;
 }
-const { name, location, position, description } = Astro.props;
+const { name, location, position, description} = Astro.props;
 ---
 
+<article class="flex flex-col items-center justify-center max-w-xl">
 <h1 class="text-4xl font-bold">Hi, i'm {name}</h1>
-<h2 class="text-xl font-medium">{position}</h2>
-<p>Location: {location}</p>
-<p>{description}</p>
+<h2 class="text-xl font-medium mt-2">{position}</h2>
+<p class="mt-2">Location: {location}</p>
+<p class="mt-5">{description}</p>
+</article>

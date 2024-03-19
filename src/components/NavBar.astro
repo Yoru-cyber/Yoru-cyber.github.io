@@ -1,13 +1,30 @@
-<nav class="fixed top-0 z-10 w-full">
-  <ul class="flex flex-row justify-evenly">
-    <li><a href="/">Home</a></li>
-    <li><a href="#Projects">Projects</a></li>
-    <li><a href="/Contact">Contact</a></li>
-    <li><a href="/About">About Me</a></li>
+<nav id="navbar" class="fixed top-0 z-10 items-center rounded-xl">
+  <ul class="flex flex-row  text-center items-center justify-center">
+    <li class="mx-5"><a href="#Home">Home</a></li>
+    <li class="mx-5"><a href="#Projects">Projects</a></li>
+    <li class="mx-5"><a href="#About">About Me</a></li>
+    <li class="mx-5"><a href="#Contact">Contact</a></li>
   </ul>
 </nav>
 <style>
-    li:hover{
-        color: #FFAE42;
-    }
+  li:hover {
+    color: #ffae42;
+  }
 </style>
+<script>
+  window.addEventListener("scroll", () => {
+    const nav = document.getElementById("navbar");
+    const scrollY = document.documentElement.scrollTop;
+
+    if (nav) {
+      if (scrollY > 0) {
+        nav.classList.add("bg-slate-400/50");
+        nav.classList.add("backdrop-blur-sm");
+      }
+      else{
+        nav.classList.remove("bg-slate-400/50");
+        nav.classList.remove("backdrop-blur-sm");
+      }
+    }
+  });
+</script>
