@@ -2,7 +2,7 @@
 title: 'URL Shortener 🧙'
 ---
 
-This is currently just an **API** that allows you to **shorten a URL.**
+This is currently just an <span style="color:#ffae42">**API**</span> that allows you to <span style="color:#ffae42">**shorten a URL.**</span>
 
 ### Made with:
 

@@ -6,12 +6,12 @@ import { Content as URLShortenerContent } from "./Projects/url-shortener.md";
 import * as URLShortener from "./Projects/url-shortener.md";
 import { Content as CurrencyAPIContent } from "./Projects/CurrencyAPI.md";
 import * as CurrencyAPI from "./Projects/CurrencyAPI.md";
-import {Content as GeminiCliContent} from "./Projects/Gemini-cli.md"
-import * as GeminiCli from "./Projects/Gemini-cli.md"
+import { Content as GeminiCliContent } from "./Projects/Gemini-cli.md";
+import * as GeminiCli from "./Projects/Gemini-cli.md";
 ---
 
 <Layout title="Yoru-cyber">
-  <main class="flex flex-col items-center justify-center mt-10">
+  <main class="flex flex-col items-center justify-center mt-16 md:mt-10">
     <section id="Home">
       <Hero
         name={md.frontmatter.name}
@@ -19,14 +19,15 @@ import * as GeminiCli from "./Projects/Gemini-cli.md"
         position={md.frontmatter.position + " 🧑‍🎓"}
         description={md.frontmatter.description}
         availableForWork={true}
+        photo="public/pfp.webp"
       />
     </section>
-    <section id="Projects" class="mt-20" >
+    <section id="Projects" class="mt-20">
       <article class="flex flex-col justify-center items-center">
         <h1 class="text-4xl font-bold text-center">
           Here are some projects i have made ✅
         </h1>
-        <ul class="flex flex-col p-5">
+        <ul class="flex flex-col p-5 items-center max-w-2xl">
           <li class="m-5">
             <a
               href="https://github.com/Yoru-cyber/URL-Shortener"
@@ -54,22 +55,20 @@ import * as GeminiCli from "./Projects/Gemini-cli.md"
     <section id="About" class="mt-20">
       <article class="flex flex-col justify-center items-center max-w-xl">
         <h1 class="text-4xl font-bold text-center">About Me</h1>
-       <p>
-        I'm a 20-year-old a full stack developer web developer from Venezuela. I
-        have experience building full stack projects. My skillset concludes in a
-        variety of programming languages and technologies, including HTML, CSS,
-        Typescript, C#, SQL, Docker. I'm currently learning about cloud
-        ecosystem such as Google Cloud Platform and Amazon Web Services.
-        I'm passionate about building accessible and user-friendly web
-        applications. 
-       </p>
+        <p>
+          I am self learner, mostly of my knowledge i have teached it to myself. That is not limited to
+          different CS concepts 💻, programming concepts but languages too 🌍.
+          Currently i'm in the third year of my career 🧑‍🎓. I'm passionate about
+          building accessible and user-friendly web applications and scalable services.
+          My main interests are cloud ecosystem ☁️ and AI 🤖, i'm actively trying to integrate them
+          to my stack as i learn more about them.
+        </p>
       </article>
     </section>
     <section id="Contact" class="mt-20">
       <article class="flex flex-col justify-center items-center max-w-xl">
         <h1 class="text-4xl font-bold text-center">Contact Me</h1>
-        <button>Email</button>
-       </article>
+      </article>
     </section>
   </main>
 </Layout>

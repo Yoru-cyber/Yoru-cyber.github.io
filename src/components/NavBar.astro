@@ -1,9 +1,12 @@
-<nav id="navbar" class="fixed top-0 z-10 items-center rounded-xl">
-  <ul class="flex flex-row  text-center items-center justify-center">
-    <li class="mx-5"><a href="#Home">Home</a></li>
-    <li class="mx-5"><a href="#Projects">Projects</a></li>
-    <li class="mx-5"><a href="#About">About Me</a></li>
-    <li class="mx-5"><a href="#Contact">Contact</a></li>
+<nav id="navbar" class="fixed top-0 z-10 items-center rounded-xl transition-all ease-in-out delay-75">
+  <ul class="flex flex-row flex-wrap text-center items-center justify-center">
+    <li class="mx-4"><a href="#Home">Home</a></li>
+    <li class="mx-4"><a href="#Projects">Projects</a></li>
+    <li class="mx-4"><a href="#About">About Me</a></li>
+    <li class="mx-4"><a href="#Contact">Contact</a></li>
+   <span id="toggle-mode" class="material-symbols-outlined mx-4 hover:cursor-pointer" toggle-mode >
+light_mode
+</span>
   </ul>
 </nav>
 <style>
@@ -27,4 +30,27 @@
       }
     }
   });
+  const button = document.querySelector('[toggle-mode]');
+  button?.addEventListener('click', ()=>{
+    let theme = sessionStorage.getItem("theme")
+      if(theme == "dark") {
+        document.body.style.background = ""
+        document.body.style.backgroundColor = "white" 
+        document.body.style.color = "black"
+        sessionStorage.setItem("theme", "light")
+        let icon = document.getElementById("toggle-mode")
+        if(icon){
+          icon.innerHTML="dark_mode"
+        }
+      }
+       if(theme == "light") {
+          document.body.style.background = "linear-gradient(to right, #24243e, #302b63, #0f0c29)"
+          document.body.style.color = "white"
+          sessionStorage.setItem("theme", "dark")
+          let icon = document.getElementById("toggle-mode")
+        if(icon){
+          icon.innerHTML="light_mode"
+        }
+        }
+    })
 </script>
