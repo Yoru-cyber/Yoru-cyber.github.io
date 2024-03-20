@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
-import * as md from "../content/cv.md";
+import * as md from "./content/cv.md";
 import { Content as URLShortenerContent } from "./Projects/url-shortener.md";
 import * as URLShortener from "./Projects/url-shortener.md";
 import { Content as CurrencyAPIContent } from "./Projects/CurrencyAPI.md";
@@ -19,7 +19,7 @@ import * as GeminiCli from "./Projects/Gemini-cli.md";
         position={md.frontmatter.position + " 🧑‍🎓"}
         description={md.frontmatter.description}
         availableForWork={true}
-        photo="public/pfp.webp"
+        photo="/pfp.webp"
       />
     </section>
     <section id="Projects" class="mt-20">
