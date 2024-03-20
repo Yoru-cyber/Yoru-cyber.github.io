@@ -1,7 +1,7 @@
 ---
 name: 'Carlos'
 description: '
-I am a full-stack developer with experience in both back-end and front-end development. I am proficient in a variety of programming languages and frameworks, including Python, TypeScript, JavaScript, C#, HTML, CSS, React, and Angular. I also have experience with DevOps tools such as Git, GitHub Actions, Docker, and Linux.
+I am a full-stack developer. I work mainly with: TypeScript, JavaScript, C#, HTML, CSS, React, and Angular. I also have experience with DevOps tools such as Git, GitHub Actions, Docker, and Linux.
 '
 location: 'Venezuela'
 position: 'Cs student'
