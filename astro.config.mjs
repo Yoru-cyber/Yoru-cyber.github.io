@@ -5,6 +5,5 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), react()],
-  site:"https://yoru-cyber.github.io",
-  base:"/Yoru-cyber.github.io"
+  site:"https://yoru-cyber.github.io"
 });
