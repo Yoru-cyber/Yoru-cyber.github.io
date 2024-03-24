@@ -1,6 +1,5 @@
 ---
 import NavBar from "../components/NavBar.astro";
-import Ninja from "../components/Ninja.jsx";
 interface Props {
   title: string;
 }
@@ -31,7 +30,6 @@ const { title } = Astro.props;
       <NavBar />
     </header>
     <slot />
-    <Ninja client:only />
     <footer class="flex w-full p-4 items-center justify-center">
       <a href="https://github.com/Yoru-cyber/">
         <svg
